@@ -36,6 +36,10 @@ body {
     overflow: hidden;
     height: 44px;
     width: 44px;
+    img{
+      height: 44px;
+      width: 44px;
+    }
   }
   .column {
     display: flex;

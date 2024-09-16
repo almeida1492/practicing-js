@@ -54,3 +54,32 @@ const musicData = [
   { artist: "Rihanna", name: "Anti", sales: 603000 },
   { artist: "Justin Bieber", name: "Purpose", sales: 554000 },
 ];
+//console.log( musicData)
+
+const newARR = musicData.map((item)=>(`${item.name} by ${item.artist} sold ${item.sales} copies`) );
+//const  newARR =  musicData.map((item)=>(item.name +" by "+ item.artist +" sold "+ item.sales +" copies "))
+//console.log(newARR)
+
+const filtering = musicData.filter((item)=>(item.name.length>=10 && item.name.length<=25))
+//console.log(filtering);
+
+
+const finalArr =  musicData
+.filter((item => item.sales>=1000000)
+.map(item =>`${item.artist} is a great performer`));
+console.log(finalArr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
